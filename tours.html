@@ -11,6 +11,9 @@
 				font-size: 65%;
 				display: inline;
 			}
+			h5, input{
+				display: inline;
+			}
 		</style>
 	</head>
 	<body onload="start('Descripcion-Antigua', 'Itinerario-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'DA', 'IA', 'PA', 'RA');">
@@ -34,7 +37,7 @@
 					<button class="btn btn-secondary" id="DA" onclick="mostrar('Descripcion-Antigua', 'Itinerario-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'DA', 'IA', 'PA', 'RA')">Descripcion</button>
 					<button class="btn btn-secondary" id="IA" onclick="mostrar('Itinerario-Antigua', 'Descripcion-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'IA', 'PA', 'RA', 'DA')">Itinerario</button>
 					<button class="btn btn-secondary" id="PA" onclick="mostrar('Precio-Antigua', 'Descripcion-Antigua', 'Itinerario-Antigua', 'Reservacion-Antigua', 'PA', 'RA', 'DA', 'IA')">Precio</button>
-					<button class="btn btn-secondary" id="RA" onclick="mostrar('Reservacion-Antigua', 'Precio-Antigua', 'Descripcion-Antigua', 'Itinerario-Antigua', 'IA', 'PA', 'RA', 'DA')">Reservacion</button>
+					<button class="btn btn-secondary" id="RA" onclick="mostrar('Reservacion-Antigua', 'Precio-Antigua', 'Descripcion-Antigua', 'Itinerario-Antigua', 'RA', 'IA', 'PA', 'DA')">Reservacion</button>
 				</div>
 				<div class="tour-info" id="Descripcion-Antigua">
 					Durante este tour conocera la bella ciudad colonial de Antigua Guatemala. Su arquitectura se remonta al siglo XV.
@@ -51,34 +54,20 @@
 				</div>
 				<div class="tour-info"id="Reservacion-Antigua">
 					<div class="insc">
-				      <h1>Travel Center Guatemala</h1>
-				      <hr>
-				      <h3>Enter your reservation data</h3>
-				      <form>
-				        <p>Date</p>
-				        <input type="date" name="Fecha"><br>
-				        <p>Time</p>
-				        <input type="time" name="Hora"><br>
-				        <p>Passengers</p>
-				        <input type="number" name="Pax"><br>
-				        <input type="button" name="Calcular" value="Go" class="btn btn-primary">
-				      </form>
-				      <hr>
 				      <h2 style="text-align: center;">Reservation</h2>
 				      <p>Fill this form to reserve your tour.</p>
-				      <hr>
-				      <div class="Info">
-				        <h4>Tour</h4>&nbsp&nbsp&nbsp&nbsp&nbsp<p>Antigua Guatemala</p><br>
-				        <h4>Day</h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<p>20/8/2020</p><br>
-				        <h4>Time</h4>&nbsp&nbsp&nbsp&nbsp<p>9:30 am</p><br>
-				      </div>
-				      <hr>
 				      <div class="reservation-form">
 				        <form action="https://formspree.io/travelcenterguatemala@gmail.com" method="post">
+				          <h5>Date</h5>
+				          <input type="date" name="Fecha"><br>
+				          <h5>Time</h5>
+				          <input type="time" name="Hora"><br>
+				          <h5>Passengers</h5>
+				          <input type="number" name="Pax"><br>
 				          <h5>Name</h5>
 				          <input type="text" class="name" name="Nombre" placeholder="Name">
 				          <br>
-									<h5>Lastname</h5>
+						  <h5>Lastname</h5>
 				          <input type="text" class="lastname" name="Apellido" placeholder="Lastname">
 				          <br>
 				          <h5>Email</h5>
