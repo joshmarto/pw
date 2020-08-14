@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<title>Reservation</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./CSS/style.css">
+		<link rel="icon" href="logo.png" type="image/png">
+    <style type="text/css">
+      .Info{
+        padding-left: 42%;
+        padding-right: 35%;
+      }
+      form{
+        padding-left: 15%;
+        padding-right: 15%;
+      }
+      h4, p{
+        display: inline;
+      }
+      input{
+        width: 100%;
+      }
+    </style>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+				<div class="navbar-collapse">
+					<img src="logo.png" width="4%" height="4%" href="index.html">
+					<a href="index.html" class="navbar-brand" style="color: gray;">Travel Center Guatemala</a>&nbsp&nbsp&nbsp&nbsp
+					<a class="nav-item" href="tours.html" style="color: gray;">Tours</a>&nbsp&nbsp&nbsp&nbsp
+					<a class="nav-item" href="giras.html" style="color: gray;">Giras</a>&nbsp&nbsp&nbsp&nbsp
+					<a class="nav-item" href="about.html" style="color: gray;">About us...</a>&nbsp&nbsp&nbsp&nbsp
+					<a class="nav-item" href="contact.html" style="color: gray;">Contact</a>&nbsp&nbsp&nbsp&nbsp
+				</div>
+			</nav>
+		</header>
+		<div class="insc">
+      <h1>Travel Center Guatemala</h1>
+      <hr>
+      <h2 style="text-align: center;">Reservation</h2>
+      <p>Fill this form to reserve your tour.</p>
+      <hr>
+      <div class="Info">
+        <h4>Tour</h4>&nbsp&nbsp&nbsp&nbsp&nbsp<p>Antigua Guatemala</p><br>
+        <h4>Day</h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<p>20/8/2020</p><br>
+        <h4>Time</h4>&nbsp&nbsp&nbsp&nbsp<p>9:30 am</p><br>
+      </div>
+      <hr>
+      <div class="reservation-form">
+        <form action="https://formspree.io/travelcenterguatemala@gmail.com" method="post">
+          <h5>Name</h5>
+          <input type="text" class="name" name="Nombre" placeholder="Name">
+          <br>
+					<h5>Lastname</h5>
+          <input type="text" class="lastname" name="Apellido" placeholder="Lastname">
+          <br>
+          <h5>Email</h5>
+          <input type="text" class="email" name="Email" placeholder="something@example.com">
+          <br>
+          <h5>Extra comments</h5>
+          <textarea name="text" class="comment" name="Comentario" rows="6" cols="100" placeholder="Comments here..." style="width: 100%;"></textarea>
+          <br>
+          <div class="status">
+
+          </div>
+          <p style="color: red;">Note: Remmember to check the box "I'm not a robot" at the end to send the form.</p>
+          <input type="Submit" name="Submit" value="Reserve" class="btn btn-light">
+        </form>
+      </div>
+    </div>
+		<footer>
+			<hr>
+			Facebook: &#64TravelCenterGuatemala <br>
+            &copy; 2020 - Travel Center Guatemala
+		</footer>
+	</body>
+</html>
