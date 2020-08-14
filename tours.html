@@ -29,10 +29,10 @@
 			<br>
 			<div class="tour" style="text-align: justify;">
 				<h3>Antigua Guatemala</h3>
-				<button class="btn btn-secondary" onclick="mostrar('Descripcion-Antigua', 'Itinerario-Antigua', 'Precio-Antigua', 'Reservacion-Antigua')">Descripcion</button>
-				<button class="btn btn-secondary" onclick="mostrar('Itinerario-Antigua', 'Descripcion-Antigua', 'Precio-Antigua', 'Reservacion-Antigua')">Itinerario</button>
-				<button class="btn btn-secondary" onclick="mostrar('Precio-Antigua', 'Descripcion-Antigua', 'Itinerario-Antigua', 'Reservacion-Antigua')">Precio</button>
-				<button class="btn btn-secondary" onclick="mostrar('Reservacion-Antigua', 'Descripcion-Antigua', 'Itinerario-Antigua', 'Precio-Antigua')">Reservacion</button>
+				<button class="btn btn-secondary" id="DA" onclick="mostrar('Descripcion-Antigua', 'Itinerario-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'DA', 'IA', 'PA', 'RA')">Descripcion</button>
+				<button class="btn btn-secondary" id="IA" onclick="mostrar('Itinerario-Antigua', 'Descripcion-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'IA', 'PA', 'RA', 'DA')">Itinerario</button>
+				<button class="btn btn-secondary" id="PA" onclick="mostrar('Precio-Antigua', 'Descripcion-Antigua', 'Itinerario-Antigua', 'Reservacion-Antigua', 'PA', 'RA', 'DA', 'IA')">Precio</button>
+				<button class="btn btn-secondary" id="RA" onclick="mostrar('Reservacion-Antigua', 'Descripcion-Antigua', 'Itinerario-Antigua', 'Precio-Antigua', 'RA', 'DA', 'IA', 'PA')">Reservacion</button>
 				<div id="Descripcion-Antigua">
 					Durante este tour conocera la bella ciudad colonial de Antigua Guatemala. Su arquitectura se remonta al siglo XV.
 				</div>
@@ -94,7 +94,7 @@
   				}
 			}
 
-			function mostrar(target, source, source2, source3) {
+			function mostrar(target, source, source2, source3, btn, btn2, btn3, btn4) {
   				var a = document.getElementById(target);
   				var b = document.getElementById(source);
   				var c = document.getElementById(source2);
@@ -103,6 +103,18 @@
   				b.style.display = "none";
   				c.style.display = "none";
   				d.style.display = "none";
+  				var button = document.getElementById(btn);
+  				var button2 = document.getElementById(btn2);
+  				var button3 = document.getElementById(btn3);
+  				var button4 = document.getElementById(btn4);
+  				button.style.color = "black";
+  				button2.style.color = "white";
+  				button3.style.color = "white";
+  				button4.style.color = "white";
+  				button.style.backgroundColor = "white";
+  				button2.style.backgroundColor = "#868e96";
+  				button3.style.backgroundColor = "#868e96";
+  				button4.style.backgroundColor = "#868e96";
 			}
 		</script>
 		<footer>
