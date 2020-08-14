@@ -12,7 +12,7 @@
 			}
 		</style>
 	</head>
-	<body>
+	<body onload="start('Descripcion-Antigua', 'Itinerario-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'DA', 'IA', 'PA', 'RA');">
 		<header>
 			<nav class="navbar">
 				<div class="navbar-collapse">
@@ -46,7 +46,7 @@
 					El precio por persona en USD es de 25.00 por persona.
 					<img src="antigua3.jpg" style="width: 100%;">
 				</div>
-				<div class="tour-info" id="Reservacion-Antigua">
+				<div class="tour-info"id="Reservacion-Antigua">
 					Para hacer su reservacion solamente debe realizar su pago.
 					<img src="antigua4.jpg" style="width: 100%;">
 				</div>
@@ -69,7 +69,28 @@
 			</div>
 		</div>
 		<script type="text/javascript">
-			var fl = $(".content").load();
+			function start(b1, b2, b3, b4, c1, c2, c3, c4) {
+				var a = document.getElementById(b1);
+				var b = document.getElementById(b2);
+				var c = document.getElementById(b3);
+				var d = document.getElementById(b4);
+				a.style.display = "block";
+				b.style.display = "none";
+				c.style.display = "none";
+				d.style.display = "none";
+				var button = document.getElementById(c1);
+				var button2 = document.getElementById(c2);
+				var button3 = document.getElementById(c3);
+				var button4 = document.getElementById(c4);
+				button.style.color = "black";
+				button2.style.color = "white";
+				button3.style.color = "white";
+				button4.style.color = "white";
+				button.style.backgroundColor = "white";
+				button2.style.backgroundColor = "#868e96";
+				button3.style.backgroundColor = "#868e96";
+				button4.style.backgroundColor = "#868e96";
+			}
 
 			function remplazar(target, source, source2, source3) {
 				var m = document.getElementById(target);
