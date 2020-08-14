@@ -34,7 +34,7 @@
 					<button class="btn btn-secondary" id="DA" onclick="mostrar('Descripcion-Antigua', 'Itinerario-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'DA', 'IA', 'PA', 'RA')">Descripcion</button>
 					<button class="btn btn-secondary" id="IA" onclick="mostrar('Itinerario-Antigua', 'Descripcion-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'IA', 'PA', 'RA', 'DA')">Itinerario</button>
 					<button class="btn btn-secondary" id="PA" onclick="mostrar('Precio-Antigua', 'Descripcion-Antigua', 'Itinerario-Antigua', 'Reservacion-Antigua', 'PA', 'RA', 'DA', 'IA')">Precio</button>
-					<button class="btn btn-secondary" id="RA" onclick="reservar()">Reservacion</button>
+					<button class="btn btn-secondary" id="RA" onclick="mostrar('Reservacion-Antigua', 'Precio-Antigua', 'Descripcion-Antigua', 'Itinerario-Antigua', 'IA', 'PA', 'RA', 'DA')">Reservacion</button>
 				</div>
 				<div class="tour-info" id="Descripcion-Antigua">
 					Durante este tour conocera la bella ciudad colonial de Antigua Guatemala. Su arquitectura se remonta al siglo XV.
@@ -50,9 +50,51 @@
 					<img src="antigua3.jpg" style="width: 100%;">
 				</div>
 				<div class="tour-info"id="Reservacion-Antigua">
-					Para hacer su reservacion solamente debe realizar su pago.
-					<img src="antigua4.jpg" style="width: 100%;">
-					<p><a href="Reservation.html" class="btn btn-success">Reservar</a></p>
+					<div class="insc">
+				      <h1>Travel Center Guatemala</h1>
+				      <hr>
+				      <h3>Enter your reservation data</h3>
+				      <form>
+				        <p>Date</p>
+				        <input type="date" name="Fecha"><br>
+				        <p>Time</p>
+				        <input type="time" name="Hora"><br>
+				        <p>Passengers</p>
+				        <input type="number" name="Pax"><br>
+				        <input type="button" name="Calcular" value="Go" class="btn btn-primary">
+				      </form>
+				      <hr>
+				      <h2 style="text-align: center;">Reservation</h2>
+				      <p>Fill this form to reserve your tour.</p>
+				      <hr>
+				      <div class="Info">
+				        <h4>Tour</h4>&nbsp&nbsp&nbsp&nbsp&nbsp<p>Antigua Guatemala</p><br>
+				        <h4>Day</h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<p>20/8/2020</p><br>
+				        <h4>Time</h4>&nbsp&nbsp&nbsp&nbsp<p>9:30 am</p><br>
+				      </div>
+				      <hr>
+				      <div class="reservation-form">
+				        <form action="https://formspree.io/travelcenterguatemala@gmail.com" method="post">
+				          <h5>Name</h5>
+				          <input type="text" class="name" name="Nombre" placeholder="Name">
+				          <br>
+									<h5>Lastname</h5>
+				          <input type="text" class="lastname" name="Apellido" placeholder="Lastname">
+				          <br>
+				          <h5>Email</h5>
+				          <input type="text" class="email" name="Email" placeholder="something@example.com">
+				          <br>
+				          <h5>Extra comments</h5>
+				          <textarea name="text" class="comment" name="Comentario" rows="6" cols="100" placeholder="Comments here..." style="width: 100%;"></textarea>
+				          <br>
+				          <div class="status">
+
+				          </div>
+				          <p style="color: red;">Note: Remmember to check the box "I'm not a robot" at the end to send the form.</p>
+				          <input type="Submit" name="Submit" value="Reserve" class="btn btn-light">
+				        </form>
+				      </div>
+				    </div>
 				</div>
 				<p style="text-align: right; padding-bottom: 1%;"><a href="https://www.baccredomatic.com/es-gt" target="_blank" class="btn btn-info">Comprar</a></p>
 			</div>
