@@ -32,7 +32,7 @@
 				<button class="btn btn-secondary" id="DA" onclick="mostrar('Descripcion-Antigua', 'Itinerario-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'DA', 'IA', 'PA', 'RA')">Descripcion</button>
 				<button class="btn btn-secondary" id="IA" onclick="mostrar('Itinerario-Antigua', 'Descripcion-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'IA', 'PA', 'RA', 'DA')">Itinerario</button>
 				<button class="btn btn-secondary" id="PA" onclick="mostrar('Precio-Antigua', 'Descripcion-Antigua', 'Itinerario-Antigua', 'Reservacion-Antigua', 'PA', 'RA', 'DA', 'IA')">Precio</button>
-				<button class="btn btn-secondary" id="RA" onclick="mostrar('Reservacion-Antigua', 'Descripcion-Antigua', 'Itinerario-Antigua', 'Precio-Antigua', 'RA', 'DA', 'IA', 'PA')">Reservacion</button>
+				<button class="btn btn-secondary" id="RA" onclick="reservar()">Reservacion</button>
 				<div class="tour-info" id="Descripcion-Antigua">
 					Durante este tour conocera la bella ciudad colonial de Antigua Guatemala. Su arquitectura se remonta al siglo XV.
 					<img src="antigua1.jpg" style="width: 100%;">
@@ -141,6 +141,10 @@
   				button2.style.backgroundColor = "#868e96";
   				button3.style.backgroundColor = "#868e96";
   				button4.style.backgroundColor = "#868e96";
+			}
+
+			function reservar(){
+				window.location.href = "Reservation.html"
 			}
 		</script>
 		<footer>
