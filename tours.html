@@ -18,6 +18,8 @@
 				text-align: center;
 			}
 		</style>
+    	<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    	<script src="reserve.js"></script>
 	</head>
 	<body onload="start('Descripcion-Antigua', 'Itinerario-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'DA', 'IA', 'PA', 'RA'); start('Descripcion-Tikal', 'Itinerario-Tikal', 'Precio-Tikal', 'Reservacion-Tikal', 'DT', 'IT', 'PT', 'RT'); start('Descripcion-Chichicastenango', 'Itinerario-Chichicastenango', 'Precio-Chichicastenango', 'Reservacion-Chichicastenango', 'DC', 'IC', 'PC', 'RC'); start('Descripcion-Atitlan', 'Itinerario-Atitlan', 'Precio-Atitlan', 'Reservacion-Atitlan', 'DL', 'IL', 'PL', 'RL');">
 		<header>
@@ -34,7 +36,7 @@
 		</header>
 		<div class="content">
 			<br>
-			<div class="tour" style="text-align: justify;">
+			<div class="tour" style="text-align: justify;" id="Antigua">
 				<h3>Antigua Guatemala</h3>
 				<img src="antigua2.jpg" width="100%">
 				<br><br>
@@ -92,7 +94,7 @@
 				</div>
 				<p style="text-align: right; padding-bottom: 1%;"><a href="https://www.baccredomatic.com/es-gt" target="_blank" class="btn btn-info">Buy</a></p>
 			</div>
-			<div class="tour">
+			<div class="tour" id="Tikal">
 				<h3>Tikal</h3>
 				<img src="tikal.jpg" width="100%">
 				<br><br>
@@ -150,7 +152,7 @@
 				</div>
 				<p style="text-align: right; padding-bottom: 1%;"><a href="https://www.baccredomatic.com/es-gt" target="_blank" class="btn btn-info">Buy</a></p>
 			</div>
-			<div class="tour">
+			<div class="tour" id="Chichicastenango">
 				<h3>Chichicastenango</h3>
 				<img src="chichicastenango.jpg" width="100%">
 				<br><br>
@@ -185,9 +187,9 @@
 				          <input type="text" class="email" name="Email" placeholder="something@example.com" style="width: 50%;">
 				          <br><br>
 				          <h5>Date</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&nbsp
-				          <input type="date" name="Fecha" style="width: 50%;"><br><br>
+				          <input type="date" name="date" style="width: 50%;"><br><br>
 				          <h5>Passengers</h5>&nbsp
-				          <input type="number" name="Pax" style="width: 50%;"><br>
+				          <input type="number" name="pax" style="width: 50%;"><br>
 						  <br><br>
 				          <h5>Comments</h5>
 				          <textarea name="text" class="comment" name="Comentario" rows="6" cols="100" placeholder="Comments here..." style="width: 100%;"></textarea>
@@ -205,7 +207,7 @@
 				</div>
 				<p style="text-align: right; padding-bottom: 1%;"><a href="https://www.baccredomatic.com/es-gt" target="_blank" class="btn btn-info">Buy</a></p>
 			</div>
-			<div class="tour">
+			<div class="tour" id="Atitlan">
 				<h3>Atitlan Lake</h3>
 				<img src="atitlan.jpg" width="100%">
 				<br><br>
