@@ -14,6 +14,9 @@
 			h5, input{
 				display: inline;
 			}
+			.btn-center{
+				text-align: center;
+			}
 		</style>
 	</head>
 	<body onload="start('Descripcion-Antigua', 'Itinerario-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'DA', 'IA', 'PA', 'RA'); start('Descripcion-Tikal', 'Itinerario-Tikal', 'Precio-Tikal', 'Reservacion-Tikal', 'DT', 'IT', 'PT', 'RT'); start('Descripcion-Chichicastenango', 'Itinerario-Chichicastenango', 'Precio-Chichicastenango', 'Reservacion-Chichicastenango', 'DC', 'IC', 'PC', 'RC'); start('Descripcion-Atitlan', 'Itinerario-Atitlan', 'Precio-Atitlan', 'Reservacion-Atitlan', 'DL', 'IL', 'PL', 'RL');">
@@ -63,15 +66,15 @@
 				          <input type="text" class="name" name="Nombre" placeholder="Name" style="width: 50%;">
 				          <br><br>
 				          <h5>Lastname</h5>&nbsp&nbsp&nbsp&nbsp&hairsp;&hairsp;
-				          <input type="text" class="lastname" name="Apellido" placeholder="Lastname" style="width: 25%;">
+				          <input type="text" class="lastname" name="Apellido" placeholder="Lastname" style="width: 50%;">
 				          <br><br>
 				          <h5>Email</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&hairsp;&nbsp&nbsp
-				          <input type="text" class="email" name="Email" placeholder="something@example.com" style="width: 25%;">
+				          <input type="text" class="email" name="Email" placeholder="something@example.com" style="width: 50%;">
 				          <br><br>
 				          <h5>Date</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&nbsp
-				          <input type="date" name="Fecha" style="width: 25%;"><br><br>
+				          <input type="date" name="Fecha" style="width: 50%;"><br><br>
 				          <h5>Passengers</h5>&nbsp
-				          <input type="number" name="Pax" style="width: 25%;"><br>
+				          <input type="number" name="Pax" style="width: 50%;"><br>
 						  <br><br>
 				          <h5>Comments</h5>
 				          <textarea name="text" class="comment" name="Comentario" rows="6" cols="100" placeholder="Comments here..." style="width: 100%;"></textarea>
@@ -80,7 +83,9 @@
 
 				          </div>
 				          <p style="color: red;">Note: Remmember to check the box "I'm not a robot" at the end to send the form.</p>
-				          <input type="Submit" name="Antigua" value="Reserve" class="btn btn-light">
+				          <div class="btn-center">
+				          	<input type="Submit" name="Antigua" value="Send" class="btn btn-light">
+				          </div>
 				        </form>
 				      </div>
 				    </div>
@@ -116,18 +121,18 @@
 				      <div class="reservation-form">
 				        <form action="https://formspree.io/travelcenterguatemala@gmail.com" method="post">
 				          <h5>Name</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8198;&nbsp&nbsp
-				          <input type="text" class="name" name="Nombre" placeholder="Name" style="width: 25%;">
+				          <input type="text" class="name" name="Nombre" placeholder="Name" style="width: 50%;">
 				          <br><br>
 				          <h5>Lastname</h5>&nbsp&nbsp&nbsp&hairsp;&hairsp;&nbsp
-				          <input type="text" class="lastname" name="Apellido" placeholder="Lastname" style="width: 25%;">
+				          <input type="text" class="lastname" name="Apellido" placeholder="Lastname" style="width: 50%;">
 				          <br><br>
 				          <h5>Email</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&hairsp;&nbsp&nbsp
-				          <input type="text" class="email" name="Email" placeholder="something@example.com" style="width: 25%;">
+				          <input type="text" class="email" name="Email" placeholder="something@example.com" style="width: 50%;">
 				          <br><br>
 				          <h5>Date</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&nbsp
-				          <input type="date" name="Fecha" style="width: 25%;"><br><br>
+				          <input type="date" name="Fecha" style="width: 50%;"><br><br>
 				          <h5>Passengers</h5>&nbsp
-				          <input type="number" name="Pax" style="width: 25%;"><br>
+				          <input type="number" name="Pax" style="width: 50%;"><br>
 						  <br><br>
 				          <h5>Comments</h5>
 				          <textarea name="text" class="comment" name="Comentario" rows="6" cols="100" placeholder="Comments here..." style="width: 100%;"></textarea>
@@ -136,7 +141,9 @@
 
 				          </div>
 				          <p style="color: red;">Note: Remmember to check the box "I'm not a robot" at the end to send the form.</p>
-				          <input type="Submit" name="Tikal" value="Reserve" class="btn btn-light">
+				          <div class="btn-center">
+				          	<input type="Submit" name="Tikal" value="Send" class="btn btn-light">
+				      	  </div>
 				        </form>
 				      </div>
 				    </div>
@@ -169,18 +176,18 @@
 				      <div class="reservation-form">
 				        <form action="https://formspree.io/travelcenterguatemala@gmail.com" method="post">
 				          <h5>Name</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8198;&nbsp&nbsp
-				          <input type="text" class="name" name="Nombre" placeholder="Name" style="width: 25%;">
+				          <input type="text" class="name" name="Nombre" placeholder="Name" style="width: 50%;">
 				          <br><br>
 				          <h5>Lastname</h5>&nbsp&nbsp&nbsp&hairsp;&hairsp;&nbsp
-				          <input type="text" class="lastname" name="Apellido" placeholder="Lastname" style="width: 25%;">
+				          <input type="text" class="lastname" name="Apellido" placeholder="Lastname" style="width: 50%;">
 				          <br><br>
 				          <h5>Email</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&hairsp;&nbsp&nbsp
-				          <input type="text" class="email" name="Email" placeholder="something@example.com" style="width: 25%;">
+				          <input type="text" class="email" name="Email" placeholder="something@example.com" style="width: 50%;">
 				          <br><br>
 				          <h5>Date</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&nbsp
-				          <input type="date" name="Fecha" style="width: 25%;"><br><br>
+				          <input type="date" name="Fecha" style="width: 50%;"><br><br>
 				          <h5>Passengers</h5>&nbsp
-				          <input type="number" name="Pax" style="width: 25%;"><br>
+				          <input type="number" name="Pax" style="width: 50%;"><br>
 						  <br><br>
 				          <h5>Comments</h5>
 				          <textarea name="text" class="comment" name="Comentario" rows="6" cols="100" placeholder="Comments here..." style="width: 100%;"></textarea>
@@ -189,7 +196,9 @@
 
 				          </div>
 				          <p style="color: red;">Note: Remmember to check the box "I'm not a robot" at the end to send the form.</p>
-				          <input type="Submit" name="Chichicastenango" value="Reserve" class="btn btn-light">
+				          <div class="btn-center">
+				          	<input type="Submit" name="Chichicastenango" value="Send" class="btn btn-light">
+				          </div>
 				        </form>
 				      </div>
 				    </div>
@@ -222,18 +231,18 @@
 				      <div class="reservation-form">
 				        <form action="https://formspree.io/travelcenterguatemala@gmail.com" method="post">
 				          <h5>Name</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8198;&nbsp&nbsp
-				          <input type="text" class="name" name="Nombre" placeholder="Name" style="width: 25%;">
+				          <input type="text" class="name" name="Nombre" placeholder="Name" style="width: 50%;">
 				          <br><br>
 				          <h5>Lastname</h5>&nbsp&nbsp&nbsp&hairsp;&hairsp;&nbsp
-				          <input type="text" class="lastname" name="Apellido" placeholder="Lastname" style="width: 25%;">
+				          <input type="text" class="lastname" name="Apellido" placeholder="Lastname" style="width: 50%;">
 				          <br><br>
 				          <h5>Email</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&hairsp;&nbsp&nbsp
-				          <input type="text" class="email" name="Email" placeholder="something@example.com" style="width: 25%;">
+				          <input type="text" class="email" name="Email" placeholder="something@example.com" style="width: 50%;">
 				          <br><br>
 				          <h5>Date</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&nbsp
-				          <input type="date" name="Fecha" style="width: 25%;"><br><br>
+				          <input type="date" name="Fecha" style="width: 50%;"><br><br>
 				          <h5>Passengers</h5>&nbsp
-				          <input type="number" name="Pax" style="width: 25%;"><br>
+				          <input type="number" name="Pax" style="width: 50%;"><br>
 						  <br><br>
 				          <h5>Comments</h5>
 				          <textarea name="text" class="comment" name="Comentario" rows="6" cols="100" placeholder="Comments here..." style="width: 100%;"></textarea>
@@ -242,7 +251,9 @@
 
 				          </div>
 				          <p style="color: red;">Note: Remmember to check the box "I'm not a robot" at the end to send the form.</p>
-				          <input type="Submit" name="Atitlan" value="Reserve" class="btn btn-light">
+				          <div class="btn-center">
+				          	<input type="Submit" name="Atitlan" value="Send" class="btn btn-light">
+				          </div>
 				        </form>
 				      </div>
 				    </div>
