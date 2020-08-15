@@ -16,7 +16,7 @@
 			}
 		</style>
 	</head>
-	<body onload="start('Descripcion-Antigua', 'Itinerario-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'DA', 'IA', 'PA', 'RA');">
+	<body onload="start('Descripcion-Antigua', 'Itinerario-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'DA', 'IA', 'PA', 'RA'); start('Descripcion-Tikal', 'Itinerario-Tikal', 'Precio-Tikal', 'Reservacion-Tikal', 'DT', 'IT', 'PT', 'RT'); start('Descripcion-Chichicastenango', 'Itinerario-Chichicastenango', 'Precio-Chichicastenango', 'Reservacion-Chichicastenango', 'DC', 'IC', 'PC', 'RC'); start('Descripcion-Atitlan', 'Itinerario-Atitlan', 'Precio-Atitlan', 'Reservacion-Atitlan', 'DL', 'IL', 'PL', 'RL');">
 		<header>
 			<nav class="navbar">
 				<div class="navbar-collapse">
@@ -36,22 +36,21 @@
 				<img src="antigua2.jpg" width="100%">
 				<br><br>
 				<div style="text-align: left;">
-					<button class="btn btn-secondary" id="DA" onclick="mostrar('Descripcion-Antigua', 'Itinerario-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'DA', 'IA', 'PA', 'RA')">Descripcion</button>
-					<button class="btn btn-secondary" id="IA" onclick="mostrar('Itinerario-Antigua', 'Descripcion-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'IA', 'PA', 'RA', 'DA')">Itinerario</button>
-					<button class="btn btn-secondary" id="PA" onclick="mostrar('Precio-Antigua', 'Descripcion-Antigua', 'Itinerario-Antigua', 'Reservacion-Antigua', 'PA', 'RA', 'DA', 'IA')">Precio</button>
-					<button class="btn btn-secondary" id="RA" onclick="mostrar('Reservacion-Antigua', 'Precio-Antigua', 'Descripcion-Antigua', 'Itinerario-Antigua', 'RA', 'IA', 'PA', 'DA')">Reservacion</button>
+					<button class="btn btn-secondary" id="DA" onclick="mostrar('Descripcion-Antigua', 'Itinerario-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'DA', 'IA', 'PA', 'RA')">Description</button>
+					<button class="btn btn-secondary" id="IA" onclick="mostrar('Itinerario-Antigua', 'Descripcion-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'IA', 'PA', 'RA', 'DA')">Schedule</button>
+					<button class="btn btn-secondary" id="PA" onclick="mostrar('Precio-Antigua', 'Descripcion-Antigua', 'Itinerario-Antigua', 'Reservacion-Antigua', 'PA', 'RA', 'DA', 'IA')">Price</button>
+					<button class="btn btn-secondary" id="RA" onclick="mostrar('Reservacion-Antigua', 'Precio-Antigua', 'Descripcion-Antigua', 'Itinerario-Antigua', 'RA', 'IA', 'PA', 'DA')">Reservation</button>
 				</div>
 				<div class="tour-info" id="Descripcion-Antigua">
-					Durante este tour conocera la bella ciudad colonial de Antigua Guatemala. Su arquitectura se remonta al siglo XV.
+					During this tour you will know the beauty colonial city of Antigua Guatemala. It's arquitechture goes on XV century.
 					<!-- <img src="antigua1.jpg" style="width: 100%;"> -->
 				</div>
 				<div class="tour-info" id="Itinerario-Antigua">
-					Por la mañana tenemos la salida de Ciudad de Guatemala hacia la ciudad colonial, el viaje tomo alrededor de 1 hora.
-					Al llegar se iniciará el recorrido caminando
+					<p>Our staff will pick you up at 9:30 am and go to Antigua Guatemala, the road takes around 1 hour. Arriving you will start the tour walking through.</p>
 					<!--  <img src="antigua2.jpg" style="width: 100%;"> -->
 				</div>
 				<div class="tour-info" id="Precio-Antigua">
-					El precio por persona en USD es de 25.00 por persona.
+					<p>The price per person in USD is 25.00.</p>
 					<!--  <img src="antigua3.jpg" style="width: 100%;"> -->
 				</div>
 				<div class="tour-info"id="Reservacion-Antigua">
@@ -81,27 +80,174 @@
 
 				          </div>
 				          <p style="color: red;">Note: Remmember to check the box "I'm not a robot" at the end to send the form.</p>
-				          <input type="Submit" name="Submit" value="Reserve" class="btn btn-light">
+				          <input type="Submit" name="Antigua" value="Reserve" class="btn btn-light">
 				        </form>
 				      </div>
 				    </div>
 				</div>
-				<p style="text-align: right; padding-bottom: 1%;"><a href="https://www.baccredomatic.com/es-gt" target="_blank" class="btn btn-info">Comprar</a></p>
+				<p style="text-align: right; padding-bottom: 1%;"><a href="https://www.baccredomatic.com/es-gt" target="_blank" class="btn btn-info">Buy</a></p>
 			</div>
 			<div class="tour">
 				<h3>Tikal</h3>
-				<p>Este es el tour a Tikal</p>
-				<p style="text-align: right; padding-bottom: 1%;"><a href="https://www.baccredomatic.com/es-gt" target="_blank" class="btn btn-info">Comprar</a></p>
+				<img src="tikal.jpg" width="100%">
+				<br><br>
+				<div style="text-align: left;">
+					<button class="btn btn-secondary" id="DT" onclick="mostrar('Descripcion-Tikal', 'Itinerario-Tikal', 'Precio-Tikal', 'Reservacion-Tikal', 'DT', 'IT', 'PT', 'RT')">Description</button>
+					<button class="btn btn-secondary" id="IT" onclick="mostrar('Itinerario-Tikal', 'Descripcion-Tikal', 'Precio-Tikal', 'Reservacion-Tikal', 'IT', 'PT', 'RT', 'DT')">Schedule</button>
+					<button class="btn btn-secondary" id="PT" onclick="mostrar('Precio-Tikal', 'Descripcion-Tikal', 'Itinerario-Tikal', 'Reservacion-Tikal', 'PT', 'RT', 'DT', 'IT')">Price</button>
+					<button class="btn btn-secondary" id="RT" onclick="mostrar('Reservacion-Tikal', 'Precio-Tikal', 'Descripcion-Tikal', 'Itinerario-Tikal', 'RT', 'IT', 'PT', 'DT')">Reservation</button>
+				</div>
+				<div class="tour-info" id="Descripcion-Tikal">
+					During this tour you will visit the great city of Tikal, the main city on the pre-colonial age.
+					<!-- <img src="antigua1.jpg" style="width: 100%;"> -->
+				</div>
+				<div class="tour-info" id="Itinerario-Tikal">
+					<p>Our staff pick you up at 4:45 am at your hotel to take you to the airport. After the check-in, the flight will departure at 6 am. Around the 7 am you will be arriving to Flores (which is the airport's name) and our personal will be waiting you with a sign with your name. Then you will be taked to Tikal, this trip takes around 1 hour. Inside of Tikal, the guide will take you trought the jungle to visit the most important monuments and temples. You will have the chance to ride to the top of temple IV which has 230 ft.</p>
+					<!--  <img src="antigua2.jpg" style="width: 100%;"> -->
+				</div>
+				<div class="tour-info" id="Precio-Tikal">
+					The price per person in USD is 350.00.
+					<!--  <img src="antigua3.jpg" style="width: 100%;"> -->
+				</div>
+				<div class="tour-info" id="Reservacion-Tikal">
+					<div class="insc">
+				      <h2 style="text-align: center;">Reservation</h2>
+				      <p>Fill this form to reserve your tour.</p>
+				      <div class="reservation-form">
+				        <form action="https://formspree.io/travelcenterguatemala@gmail.com" method="post">
+				          <h5>Name</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8198;
+				          <input type="text" class="name" name="Nombre" placeholder="Name" style="width: 25%;">
+				          <br>
+				          <h5>Lastame</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&hairsp;
+				          <input type="text" class="lastname" name="Apellido" placeholder="Lastname" style="width: 25%;">
+				          <br>
+				          <h5>Email</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&hairsp;
+				          <input type="text" class="email" name="Email" placeholder="something@example.com" style="width: 25%%;">
+				          <br>
+				          <h5>Date</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;
+				          <input type="date" name="Fecha" style="width: 25%;"><br>
+				          <h5>Passengers</h5>&nbsp
+				          <input type="number" name="Pax" style="width: 25%;"><br>
+						  <br>
+				          <h5>Comments</h5>
+				          <textarea name="text" class="comment" name="Comentario" rows="6" cols="100" placeholder="Comments here..." style="width: 100%;"></textarea>
+				          <br>
+				          <div class="status">
+
+				          </div>
+				          <p style="color: red;">Note: Remmember to check the box "I'm not a robot" at the end to send the form.</p>
+				          <input type="Submit" name="Tikal" value="Reserve" class="btn btn-light">
+				        </form>
+				      </div>
+				    </div>
+				</div>
+				<p style="text-align: right; padding-bottom: 1%;"><a href="https://www.baccredomatic.com/es-gt" target="_blank" class="btn btn-info">Buy</a></p>
 			</div>
 			<div class="tour">
 				<h3>Chichicastenango</h3>
-				<p>Este es el tour a Chichicastenango</p>
-				<p style="text-align: right; padding-bottom: 1%;"><a href="https://www.baccredomatic.com/es-gt" target="_blank" class="btn btn-info">Comprar</a></p>
+				<img src="chichicastenango.jpg" width="100%">
+				<br><br>
+				<div style="text-align: left;">
+					<button class="btn btn-secondary" id="DC" onclick="mostrar('Descripcion-Chichicastenango', 'Itinerario-Chichicastenango', 'Precio-Chichicastenango', 'Reservacion-Chichicastenango', 'DC', 'IC', 'PC', 'RC')">Description</button>
+					<button class="btn btn-secondary" id="IC" onclick="mostrar('Itinerario-Chichicastenango', 'Descripcion-Chichicastenango', 'Precio-Chichicastenango', 'Reservacion-Chichicastenango', 'IC', 'PC', 'RC', 'DC')">Schedule</button>
+					<button class="btn btn-secondary" id="PC" onclick="mostrar('Precio-Chichicastenango', 'Descripcion-Chichicastenango', 'Itinerario-Chichicastenango', 'Reservacion-Chichicastenango', 'PC', 'RC', 'DC', 'IC')">Price</button>
+					<button class="btn btn-secondary" id="RC" onclick="mostrar('Reservacion-Chichicastenango', 'Precio-Chichicastenango', 'Descripcion-Chichicastenango', 'Itinerario-Chichicastenango', 'RC', 'IC', 'PC', 'DC')">Reservation</button>
+				</div>
+				<div class="tour-info" id="Descripcion-Chichicastenango">
+					<p>The Chichicastenango handicraft market is where the recent Mayan populations get together to practice the exchange as their ancesters. The culture, religions, and customs can be clearly visible here. You will have the chance to visit and see the beauty of Atitlan Lake.</p>
+				</div>
+				<div class="tour-info" id="Itinerario-Chichicastenango">
+					<p>The tour starts at 7 am, after to pick you at you hotel, our staff will begin the trip to Chichicastenango village which is at 3 hours from Guatemala City. Then our guide will explain you everthing about the handicraft market which they do on days Thursdays and Sundays</p>
+				</div>
+				<div class="tour-info" id="Precio-Chichicastenango">
+					The price per person in USD is 85.00.
+				</div>
+				<div class="tour-info" id="Reservacion-Chichicastenango">
+					<div class="insc">
+				      <h2 style="text-align: center;">Reservation</h2>
+				      <p>Fill this form to reserve your tour.</p>
+				      <div class="reservation-form">
+				        <form action="https://formspree.io/travelcenterguatemala@gmail.com" method="post">
+				          <h5>Name</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8198;
+				          <input type="text" class="name" name="Nombre" placeholder="Name" style="width: 25%;">
+				          <br>
+				          <h5>Lastame</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&hairsp;
+				          <input type="text" class="lastname" name="Apellido" placeholder="Lastname" style="width: 25%;">
+				          <br>
+				          <h5>Email</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&hairsp;
+				          <input type="text" class="email" name="Email" placeholder="something@example.com" style="width: 25%%;">
+				          <br>
+				          <h5>Date</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;
+				          <input type="date" name="Fecha" style="width: 25%;"><br>
+				          <h5>Passengers</h5>&nbsp
+				          <input type="number" name="Pax" style="width: 25%;"><br>
+						  <br>
+				          <h5>Comments</h5>
+				          <textarea name="text" class="comment" name="Comentario" rows="6" cols="100" placeholder="Comments here..." style="width: 100%;"></textarea>
+				          <br>
+				          <div class="status">
+
+				          </div>
+				          <p style="color: red;">Note: Remmember to check the box "I'm not a robot" at the end to send the form.</p>
+				          <input type="Submit" name="Chichicastenango" value="Reserve" class="btn btn-light">
+				        </form>
+				      </div>
+				    </div>
+				</div>
+				<p style="text-align: right; padding-bottom: 1%;"><a href="https://www.baccredomatic.com/es-gt" target="_blank" class="btn btn-info">Buy</a></p>
 			</div>
 			<div class="tour">
 				<h3>Atitlan Lake</h3>
-				<p>Este es el tour al lago de Atitlan</p>
-				<p style="text-align: right; padding-bottom: 1%;"><a href="https://www.baccredomatic.com/es-gt" target="_blank" class="btn btn-info">Comprar</a></p>
+				<img src="atitlan.jpg" width="100%">
+				<br><br>
+				<div style="text-align: left;">
+					<button class="btn btn-secondary" id="DL" onclick="mostrar('Descripcion-Atitlan', 'Itinerario-Atitlan', 'Precio-Atitlan', 'Reservacion-Atitlan', 'DL', 'IL', 'PL', 'RL')">Description</button>
+					<button class="btn btn-secondary" id="IL" onclick="mostrar('Itinerario-Atitlan', 'Descripcion-Atitlan', 'Precio-Atitlan', 'Reservacion-Atitlan', 'IL', 'PL', 'RL', 'DL')">Schedule</button>
+					<button class="btn btn-secondary" id="PL" onclick="mostrar('Precio-Atitlan', 'Descripcion-Atitlan', 'Itinerario-Atitlan', 'Reservacion-Atitlan', 'PL', 'RL', 'DL', 'IL')">Price</button>
+					<button class="btn btn-secondary" id="RL" onclick="mostrar('Reservacion-Atitlan', 'Precio-Atitlan', 'Descripcion-Atitlan', 'Itinerario-Atitlan', 'RL', 'IL', 'PL', 'DL')">Reservation</button>
+				</div>
+				<div class="tour-info" id="Descripcion-Atitlan">
+					The Atitlan Lake is considered as one of the most beautiful in the world. Is surronded by Mayan towns which have a lot of culture. On the lake are visibles Mayan people with their handicraft boats flooding in it.
+				</div>
+				<div class="tour-info" id="Itinerario-Atitlan">
+					<p>The tour departs at 7 am starting the trip to Atitlan Lake around 3 hours. It arrives to Panajachel, the town at the border of the lake which the boat trips departs on. You will cross the lake and visit the Mayan population of Santiago Atitlan where the guide will explain you their culture and costums.</p>
+				</div>
+				<div class="tour-info" id="Precio-Atitlan">
+					The price per person in USD is 85.00.
+				</div>
+				<div class="tour-info" id="Reservacion-Atitlan">
+					<div class="insc">
+				      <h2 style="text-align: center;">Reservation</h2>
+				      <p>Fill this form to reserve your tour.</p>
+				      <div class="reservation-form">
+				        <form action="https://formspree.io/travelcenterguatemala@gmail.com" method="post">
+				          <h5>Name</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8198;
+				          <input type="text" class="name" name="Nombre" placeholder="Name" style="width: 25%;">
+				          <br>
+				          <h5>Lastame</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&hairsp;
+				          <input type="text" class="lastname" name="Apellido" placeholder="Lastname" style="width: 25%;">
+				          <br>
+				          <h5>Email</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&hairsp;
+				          <input type="text" class="email" name="Email" placeholder="something@example.com" style="width: 25%%;">
+				          <br>
+				          <h5>Date</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;
+				          <input type="date" name="Fecha" style="width: 25%;"><br>
+				          <h5>Passengers</h5>&nbsp
+				          <input type="number" name="Pax" style="width: 25%;"><br>
+						  <br>
+				          <h5>Comments</h5>
+				          <textarea name="text" class="comment" name="Comentario" rows="6" cols="100" placeholder="Comments here..." style="width: 100%;"></textarea>
+				          <br>
+				          <div class="status">
+
+				          </div>
+				          <p style="color: red;">Note: Remmember to check the box "I'm not a robot" at the end to send the form.</p>
+				          <input type="Submit" name="Atitlan" value="Reserve" class="btn btn-light">
+				        </form>
+				      </div>
+				    </div>
+				</div>
+				<p style="text-align: right; padding-bottom: 1%;"><a href="https://www.baccredomatic.com/es-gt" target="_blank" class="btn btn-info">Buy</a></p>
 			</div>
 		</div>
 		<script type="text/javascript">
