@@ -18,7 +18,7 @@ footer{
 	padding-left: 4%;
 	border-radius: 1%;
 }
-.btn-secondary:hover{
+.btn-success:hover{
 	background-color: lightgray;
 	color: black;
 }
