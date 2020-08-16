@@ -11,11 +11,123 @@
 				transition: transform .5s;
 			}
 			img:Hover{
-				opacity: 95%;
 				transform: scale(1.2);
 			}
-			h1:hover{
-				background-color: red;
+			/* GALERY SETUP IMAGES */
+			#i1{
+				background-image: url(tikal.jpg);
+				background-size: cover;
+				width: 100%;
+				transition: transform .5s;
+				color: white;
+				text-decoration: none;
+			}
+			#i2{
+				background-image: url(antigua2.jpg);
+				background-size: cover;
+				width: 100%;
+				transition: transform .5s;
+				color: white;
+				text-decoration: none;
+			}
+			#i3{
+				background-image: url(chichicastenango.jpg);
+				background-size: cover;
+				width: 100%;
+				transition: transform .5s;
+				color: white;
+				text-decoration: none;
+			}
+			#i4{
+				background-image: url(atitlan.jpg);
+				background-size: cover;
+				width: 100%;
+				transition: transform .5s;
+				color: white;
+				text-decoration: none;
+			}
+			/* GALERY SETUP BEFORE */
+			#i1:before {
+				content:'';
+				position: absolute;
+			        top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-color: rgba(0,0,0,0.6);
+				display: none;
+			}
+			/* GALERY SETUP HOVER FUNCTION */
+			#i1:hover{
+				transform: scale(1.2);
+				text-decoration: none;
+				color: white;
+				visibility: 100%;
+			}
+			#i2:hover{
+				transform: scale(1.2);
+				text-decoration: none;
+				color: white;
+				visibility: 100%;
+			}
+			#i3:hover{
+				transform: scale(1.2);
+				text-decoration: none;
+				color: white;
+				visibility: 100%;
+			}
+			#i4:hover{
+				transform: scale(1.2);
+				text-decoration: none;
+				color: white;
+				visibility: 100%;
+			}
+			/* GALERY SETUP TEXT WHITIN */
+			#i1 h1{
+				text-align: center;
+				padding-top: 25%;
+				padding-bottom: 25%;
+				color: white;
+				text-shadow: black;
+				text-decoration: none;
+				position: relative;
+			}
+			#i2 h1{
+				text-align: center;
+				padding-top: 25%;
+				padding-bottom: 25%;
+				color: white;
+				text-shadow: black;
+				text-decoration: none;
+				position: relative;
+			}
+			#i3 h1{
+				text-align: center;
+				padding-top: 25%;
+				padding-bottom: 25%;
+				color: white;
+				text-shadow: black;
+				text-decoration: none;
+				position: relative;
+			}
+			#i4 h1{
+				text-align: center;
+				padding-top: 25%;
+				padding-bottom: 25%;
+				color: white;
+				text-shadow: black;
+				text-decoration: none;
+				position: relative;
+			}
+			a{
+				text-decoration: none;
+				display: inline;
+			}
+			a:hover{
+				text-decoration: none;
+			}
+			.image{
+				padding-left: 65%;
 			}
 		</style>
 	</head>
@@ -34,10 +146,31 @@
 		</header>
 		<div class="content">
 			<!-- <a href="tours.html?pagename=tours#Tikal"><img src="tikal.jpg" style="width: 33%;"></a> This line taks to a direction on another page-->
-			<a href="tikal.html"><img src="tikal.jpg" style="width: 33%;"></a>
+			<!-- <a href="tikal.html"><img src="tikal.jpg" style="width: 33%;"></a>
 			<a href="antigua.html"><img src="antigua2.jpg" style="width: 33%;"></a>
 			<a href="chichicastenango.html"><img src="chichicastenango.jpg" style="width: 33%;"></a>
 			<a href="atitlan.html"><img src="atitlan.jpg" style="width: 33%;"></a>
+			<br><br><br><br> -->
+			<a href="tikal.html">
+				<div class="image" id="i1">
+					<h1>Tikal</h1>
+				</div>
+			</a>
+			<a href="antigua.html">
+				<div class="image" id="i2">
+					<h1>Antigua Guatemala</h1>
+				</div>
+			</a>
+			<a href="chichicastenango.html">
+				<div class="image" id="i3">
+					<h1>Chichicastenango</h1>
+				</div>
+			</a>
+			<a href="atitlan.html">
+				<div class="image" id="i4">
+					<h1>Atitlan Lake</h1>
+				</div>
+			</a>
 		</div>
 		<footer>
 			<hr>
