@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Atitlan Lake</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./CSS/style.css">
+		<link rel="icon" href="logo.png" type="image/png">
+		<style type="text/css">
+			.btn-secondary{
+				font-size: 65%;
+				display: inline;
+			}
+			h5, input{
+				display: inline;
+			}
+			.btn-center{
+				text-align: center;
+			}
+		</style>
+    	<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    	<script src="reserve.js"></script>
+	</head>
+	<body onload="start('Descripcion-Antigua', 'Itinerario-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'DA', 'IA', 'PA', 'RA'); start('Descripcion-Tikal', 'Itinerario-Tikal', 'Precio-Tikal', 'Reservacion-Tikal', 'DT', 'IT', 'PT', 'RT'); start('Descripcion-Chichicastenango', 'Itinerario-Chichicastenango', 'Precio-Chichicastenango', 'Reservacion-Chichicastenango', 'DC', 'IC', 'PC', 'RC'); start('Descripcion-Atitlan', 'Itinerario-Atitlan', 'Precio-Atitlan', 'Reservacion-Atitlan', 'DL', 'IL', 'PL', 'RL');">
+		<header>
+			<nav class="navbar">
+				<div class="navbar-collapse">
+					<img src="logo.png" width="4%" height="4%" href="index.html">
+					<a href="index.html" class="navbar-brand" style="color: gray;">Travel Center Guatemala</a>&nbsp&nbsp&nbsp&nbsp
+					<a class="nav-item" href="tours.html" style="color: gray;">Tours</a>&nbsp&nbsp&nbsp&nbsp
+					<a class="nav-item" href="giras.html" style="color: gray;">Giras</a>&nbsp&nbsp&nbsp&nbsp
+					<a class="nav-item" href="about.html" style="color: gray;">About us...</a>&nbsp&nbsp&nbsp&nbsp
+					<a class="nav-item" href="contact.html" style="color: gray;">Contact</a>&nbsp&nbsp&nbsp&nbsp
+				</div>
+			</nav>
+		</header>
+		<div class="content">
+			<br>
+			<div class="tour" id="Atitlan">
+				<h3>Atitlan Lake</h3>
+				<img src="atitlan.jpg" width="100%">
+				<br><br>
+				<div style="text-align: left;">
+					<button class="btn btn-secondary" id="DL" onclick="mostrar('Descripcion-Atitlan', 'Itinerario-Atitlan', 'Precio-Atitlan', 'Reservacion-Atitlan', 'DL', 'IL', 'PL', 'RL')">Description</button>
+					<button class="btn btn-secondary" id="IL" onclick="mostrar('Itinerario-Atitlan', 'Descripcion-Atitlan', 'Precio-Atitlan', 'Reservacion-Atitlan', 'IL', 'PL', 'RL', 'DL')">Schedule</button>
+					<button class="btn btn-secondary" id="PL" onclick="mostrar('Precio-Atitlan', 'Descripcion-Atitlan', 'Itinerario-Atitlan', 'Reservacion-Atitlan', 'PL', 'RL', 'DL', 'IL')">Price</button>
+					<button class="btn btn-secondary" id="RL" onclick="mostrar('Reservacion-Atitlan', 'Precio-Atitlan', 'Descripcion-Atitlan', 'Itinerario-Atitlan', 'RL', 'IL', 'PL', 'DL')">Reservation</button>
+				</div>
+				<div class="tour-info" id="Descripcion-Atitlan">
+					The Atitlan Lake is considered as one of the most beautiful in the world. Is surronded by Mayan towns which have a lot of culture. On the lake are visibles Mayan people with their handicraft boats flooding in it.
+				</div>
+				<div class="tour-info" id="Itinerario-Atitlan">
+					<p>The tour departs at 7 am starting the trip to Atitlan Lake around 3 hours. It arrives to Panajachel, the town at the border of the lake which the boat trips departs on. You will cross the lake and visit the Mayan population of Santiago Atitlan where the guide will explain you their culture and costums.</p>
+				</div>
+				<div class="tour-info" id="Precio-Atitlan">
+					The price per person in USD is 85.00.
+				</div>
+				<div class="tour-info" id="Reservacion-Atitlan">
+					<div class="insc">
+				      <h2 style="text-align: center;">Reservation</h2>
+				      <p>Fill this form to reserve your tour.</p>
+				      <div class="reservation-form">
+				        <form action="https://formspree.io/travelcenterguatemala@gmail.com" method="post">
+				          <h5>Name</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8198;&nbsp&nbsp
+				          <input type="text" class="name" name="Nombre" placeholder="Name" style="width: 50%;">
+				          <br><br>
+				          <h5>Lastname</h5>&nbsp&nbsp&nbsp&hairsp;&hairsp;&nbsp
+				          <input type="text" class="lastname" name="Apellido" placeholder="Lastname" style="width: 50%;">
+				          <br><br>
+				          <h5>Email</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&hairsp;&nbsp&nbsp
+				          <input type="text" class="email" name="Email" placeholder="something@example.com" style="width: 50%;">
+				          <br><br>
+				          <h5>Date</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&nbsp
+				          <input type="date" name="Fecha" style="width: 50%;"><br><br>
+				          <h5>Passengers</h5>&nbsp
+				          <input type="number" name="Pax" style="width: 50%;"><br>
+						  <br><br>
+				          <h5>Comments</h5>
+				          <textarea name="text" class="comment" name="Comentario" rows="6" cols="100" placeholder="Comments here..." style="width: 100%;"></textarea>
+				          <br>
+				          <div class="status">
+
+				          </div>
+				          <p style="color: red;">Note: Remmember to check the box "I'm not a robot" at the end to send the form.</p>
+				          <div class="btn-center">
+				          	<input type="Submit" name="Atitlan" value="Send" class="btn btn-light">
+				          </div>
+				        </form>
+				      </div>
+				    </div>
+				</div>
+				<p style="text-align: right; padding-bottom: 1%;"><a href="https://www.baccredomatic.com/es-gt" target="_blank" class="btn btn-info">Buy</a></p>
+			</div>
+		</div>
+		<script type="text/javascript">
+			function start(b1, b2, b3, b4, c1, c2, c3, c4) {
+				var a = document.getElementById(b1);
+				var b = document.getElementById(b2);
+				var c = document.getElementById(b3);
+				var d = document.getElementById(b4);
+				a.style.display = "block";
+				b.style.display = "none";
+				c.style.display = "none";
+				d.style.display = "none";
+				var button = document.getElementById(c1);
+				var button2 = document.getElementById(c2);
+				var button3 = document.getElementById(c3);
+				var button4 = document.getElementById(c4);
+				button.style.color = "black";
+				button2.style.color = "white";
+				button3.style.color = "white";
+				button4.style.color = "white";
+				button.style.backgroundColor = "white";
+				button2.style.backgroundColor = "#868e96";
+				button3.style.backgroundColor = "#868e96";
+				button4.style.backgroundColor = "#868e96";
+			}
+
+			function mostrar(target, source, source2, source3, btn, btn2, btn3, btn4) {
+  				var a = document.getElementById(target);
+  				var b = document.getElementById(source);
+  				var c = document.getElementById(source2);
+  				var d = document.getElementById(source3);
+  				a.style.display = "block";
+  				b.style.display = "none";
+  				c.style.display = "none";
+  				d.style.display = "none";
+  				var button = document.getElementById(btn);
+  				var button2 = document.getElementById(btn2);
+  				var button3 = document.getElementById(btn3);
+  				var button4 = document.getElementById(btn4);
+  				button.style.color = "black";
+  				button2.style.color = "white";
+  				button3.style.color = "white";
+  				button4.style.color = "white";
+  				button.style.backgroundColor = "white";
+  				button2.style.backgroundColor = "#868e96";
+  				button3.style.backgroundColor = "#868e96";
+  				button4.style.backgroundColor = "#868e96";
+			}
+		</script>
+		<footer>
+			<hr>
+			Facebook: &#64TravelCenterGuatemala <br>
+            &copy; 2020 - Travel Center Guatemala
+		</footer>
+	</body>
+</html>
