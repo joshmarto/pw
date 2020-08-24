@@ -5,6 +5,7 @@ footer{
 	padding-left: 5%;
 	padding-right: 5%;
 	color: gray;
+	text-align: center;
 }
 .content{
 	padding-right: 5%;
@@ -38,4 +39,14 @@ input{
 	border-top: none;
 	border-left: none;
 	border-right: none;
+}
+hr{
+	color: gray;
+	border: 10px;
+	background-color: white;
+}
+.form-purchase{
+	padding-left: 5%;
+	padding-right: 5%;
+	border-color: black;
 }
