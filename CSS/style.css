@@ -15,8 +15,8 @@ footer{
 	background-color: #003366;
 	color: white;
 	padding-top: 2%;
-	padding-right: 4%;
-	padding-left: 4%;
+	/*padding-right: 4%;
+	padding-left: 4%;*/
 	border-radius: 1%;
 }
 .btn-success:hover{
@@ -55,4 +55,12 @@ hr
 	border-color: white;
 	padding: 1%;
 	border-radius: 16px;
+}
+.tour-container{
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.head{
+	padding-left: 4%;
+	padding-right: 4%;
 }
