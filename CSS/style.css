@@ -8,11 +8,11 @@ footer{
 	text-align: center;
 }
 .content{
-	padding-right: 5%;
-	padding-left: 5%;
+	padding-right: 2.5%;
+	padding-left: 2.5%;
 }
 .tour{
-	background-color: #003366;
+	background-color: white;
 	color: white;
 	padding-top: 2%;
 	/*padding-right: 4%;
@@ -55,12 +55,13 @@ hr
 	border-color: white;
 	padding: 1%;
 	border-radius: 16px;
+	background-color: #003366;
 }
 .tour-container{
 	padding-left: 2%;
 	padding-right: 2%;
 }
 .head{
-	padding-left: 4%;
-	padding-right: 4%;
+	padding: 1%;
+	background-color: #003366;
 }
