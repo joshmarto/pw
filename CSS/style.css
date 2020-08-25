@@ -14,10 +14,6 @@ footer{
 .tour{
 	background-color: white;
 	color: white;
-	padding-top: 2%;
-	padding-right: 4%;
-	padding-left: 4%;
-	border-radius: 1%;
 }
 .btn-success:hover{
 	background-color: lightgray;
