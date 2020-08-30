@@ -24,6 +24,8 @@
 			}
 			.content{
 				padding-top: 1%;
+				padding-left: 1%;
+				padding-right: 1%;
 			}
 			.btn-success{
 				font-size: 65%;
@@ -35,22 +37,22 @@
 			.btn-center{
 				text-align: center;
 			}
-			.content{
-				padding-left: 1%;
-				padding-right: 1%;
-			}
 			footer{
 				font-size: 10px;
+				color: gray;
 			}
-			.tour-container{
-				padding-top: 1%;
-				padding-bottom: 1%;
+			h3{
+				text-align: center;
+			}
+			#TA1, #TA2, #TA3{
+				padding-left: 2.5%;
+				padding-right: 2.5%;
 			}
 		</style>
     	<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     	<script src="reserve.js"></script>
 	</head>
-	<body onload="start('Descripcion-Antigua', 'Itinerario-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'DA', 'IA', 'PA', 'RA'); start('Descripcion-Antigua2', 'Itinerario-Antigua2', 'Precio-Antigua2', 'Reservacion-Antigua2', 'DA2', 'IA2', 'PA2', 'RA2'); start('Descripcion-Antigua3', 'Itinerario-Antigua3', 'Precio-Antigua3', 'Reservacion-Antigua3', 'DA3', 'IA3', 'PA3', 'RA3');">
+	<body onload="start('Descripcion-Antigua', 'Itinerario-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'DA', 'IA', 'PA', 'RA'); start('Descripcion-Antigua2', 'Itinerario-Antigua2', 'Precio-Antigua2', 'Reservacion-Antigua2', 'DA2', 'IA2', 'PA2', 'RA2'); start('Descripcion-Antigua3', 'Itinerario-Antigua3', 'Precio-Antigua3', 'Reservacion-Antigua3', 'DA3', 'IA3', 'PA3', 'RA3'); hide('i-AntiguaODT'); hide('i-AntiguaTDT'); hide('i-AntiguaOT');">
 		<header>
 			<nav class="navbar">
 				<div class="navbar-collapse">
@@ -69,161 +71,167 @@
 				<img src="antigua2.jpg" width="100%">
 			</div>
 			<br>
-			<div class="tour">
-				<h3>One Day Tour</h3>
-				<div style="text-align: left;">
-					<button class="btn btn-success" id="DA" onclick="mostrar('Descripcion-Antigua', 'Itinerario-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'DA', 'IA', 'PA', 'RA')">Description</button>
-					<button class="btn btn-success" id="IA" onclick="mostrar('Itinerario-Antigua', 'Descripcion-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'IA', 'PA', 'RA', 'DA')">Schedule</button>
-					<button class="btn btn-success" id="PA" onclick="mostrar('Precio-Antigua', 'Descripcion-Antigua', 'Itinerario-Antigua', 'Reservacion-Antigua', 'PA', 'RA', 'DA', 'IA')">Price</button>
-					<button class="btn btn-success" id="RA" onclick="mostrar('Reservacion-Antigua', 'Precio-Antigua', 'Descripcion-Antigua', 'Itinerario-Antigua', 'RA', 'IA', 'PA', 'DA')">Reservation</button>
-				</div>
-				<div class="tour-info" id="Descripcion-Antigua">
-					<p>During this tour you will know the beauty colonial city of Antigua Guatemala. It's arquitechture goes on XV century.</p>
-				</div>
-				<div class="tour-info" id="Itinerario-Antigua">
-					<p>Our staff will pick you up at 9:30 am and go to Antigua Guatemala, the road takes around 1 hour. Arriving you will start the tour walking through.</p>
-				</div>
-				<div class="tour-info" id="Precio-Antigua">
-					<p>The price per person in USD is 25.00.</p>
-				</div>
-				<div class="tour-info"id="Reservacion-Antigua">
-					<div class="insc">
-						    <h2 style="text-align: center;">Reservation</h2>
-						    <p>Fill this form to reserve your tour.</p>
-						    <div class="reservation-form">
-						      <form action="https://formspree.io/travelcenterguatemala@gmail.com" method="post">
-						        <h5>Name</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8198;&nbsp&nbsp
-						        <input type="text" class="name" name="Nombre" placeholder="Name" style="width: 50%;">
-						        <br><br>
-						        <h5>Lastname</h5>&nbsp&nbsp&nbsp&nbsp&hairsp;&hairsp;
-						        <input type="text" class="lastname" name="Apellido" placeholder="Lastname" style="width: 50%;">
-						        <br><br>
-						        <h5>Email</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&hairsp;&nbsp&nbsp
-						        <input type="text" class="email" name="Email" placeholder="something@example.com" style="width: 50%;">
-						        <br><br>
-						        <h5>Date</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&nbsp
-						        <input type="date" class="dia" name="Fecha" style="width: 50%;"><br><br>
-						        <h5>Passengers</h5>&nbsp
-						        <input type="number" class="pax" name="Pax" style="width: 50%;"><br>
+			<div class="tour" id="TA1">
+				<h3 onclick="show('i-AntiguaODT')">One Day Tour</h3>
+				<div class="info" id="i-AntiguaODT">
+					<div style="text-align: left;">
+						<button class="btn btn-success" id="DA" onclick="mostrar('Descripcion-Antigua', 'Itinerario-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'DA', 'IA', 'PA', 'RA')">Description</button>
+						<button class="btn btn-success" id="IA" onclick="mostrar('Itinerario-Antigua', 'Descripcion-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'IA', 'PA', 'RA', 'DA')">Schedule</button>
+						<button class="btn btn-success" id="PA" onclick="mostrar('Precio-Antigua', 'Descripcion-Antigua', 'Itinerario-Antigua', 'Reservacion-Antigua', 'PA', 'RA', 'DA', 'IA')">Price</button>
+						<button class="btn btn-success" id="RA" onclick="mostrar('Reservacion-Antigua', 'Precio-Antigua', 'Descripcion-Antigua', 'Itinerario-Antigua', 'RA', 'IA', 'PA', 'DA')">Reservation</button>
+					</div>
+					<div class="tour-info" id="Descripcion-Antigua">
+						<p>During this tour you will know the beauty colonial city of Antigua Guatemala. It's arquitechture goes on XV century.</p>
+					</div>
+					<div class="tour-info" id="Itinerario-Antigua">
+						<p>Our staff will pick you up at 9:30 am and go to Antigua Guatemala, the road takes around 1 hour. Arriving you will start the tour walking through.</p>
+					</div>
+					<div class="tour-info" id="Precio-Antigua">
+						<p>The price per person in USD is 25.00.</p>
+					</div>
+					<div class="tour-info"id="Reservacion-Antigua">
+						<div class="insc">
+							<h2 style="text-align: center;">Reservation</h2>
+							<p>Fill this form to reserve your tour.</p>
+							<div class="reservation-form">
+							  <form action="https://formspree.io/travelcenterguatemala@gmail.com" method="post">
+							    <h5>Name</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8198;&nbsp&nbsp
+							    <input type="text" class="name" name="Nombre" placeholder="Name" style="width: 50%;">
+							    <br><br>
+							    <h5>Lastname</h5>&nbsp&nbsp&nbsp&nbsp&hairsp;&hairsp;
+							    <input type="text" class="lastname" name="Apellido" placeholder="Lastname" style="width: 50%;">
+							    <br><br>
+							    <h5>Email</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&hairsp;&nbsp&nbsp
+							    <input type="text" class="email" name="Email" placeholder="something@example.com" style="width: 50%;">
+							    <br><br>
+							    <h5>Date</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&nbsp
+							    <input type="date" class="dia" name="Fecha" style="width: 50%;"><br><br>
+							    <h5>Passengers</h5>&nbsp
+							    <input type="number" class="pax" name="Pax" style="width: 50%;"><br>
 								<br><br>
-						        <h5>Comments</h5>
-						        <textarea name="text" class="comment" name="Comentario" rows="6" cols="100" placeholder="Comments here..." style="width: 100%;"></textarea>
-						        <br>
-						        <div class="status">
+							    <h5>Comments</h5>
+							    <textarea name="text" class="comment" name="Comentario" rows="6" cols="100" placeholder="Comments here..." style="width: 100%;"></textarea>
+							    <br>
+							    <div class="status">
 
-						        </div>
-						        <div class="btn-center">
-						          	<input type="Submit" name="Antigua" value="Send" class="btn btn-light">
-						        </div>
-						      </form>
-						    </div>
-						  </div>
+							    </div>
+							    <div class="btn-center">
+							       <input type="Submit" name="Antigua" value="Send" class="btn btn-light">
+							    </div>
+							  </form>
+							</div>
+						</div>
+					</div>
+					<p style="text-align: right; padding-bottom: 1%;"><a href="https://www.baccredomatic.com/es-gt" target="_blank" class="btn btn-info">Buy</a></p>
 				</div>
-				<p style="text-align: right; padding-bottom: 1%;"><a href="https://www.baccredomatic.com/es-gt" target="_blank" class="btn btn-info">Buy</a></p>
 			</div>
-			<div class="tour">
-				<h3>Two Days One Night</h3>
-				<div style="text-align: left;">
-					<button class="btn btn-success" id="DA2" onclick="mostrar('Descripcion-Antigua2', 'Itinerario-Antigua2', 'Precio-Antigua2', 'Reservacion-Antigua2', 'DA2', 'IA2', 'PA2', 'RA2')">Description</button>
-					<button class="btn btn-success" id="IA2" onclick="mostrar('Itinerario-Antigua2', 'Descripcion-Antigua2', 'Precio-Antigua2', 'Reservacion-Antigua2', 'IA2', 'PA2', 'RA2', 'DA2')">Schedule</button>
-					<button class="btn btn-success" id="PA2" onclick="mostrar('Precio-Antigua2', 'Descripcion-Antigua2', 'Itinerario-Antigua2', 'Reservacion-Antigua2', 'PA2', 'RA2', 'DA2', 'IA2')">Price</button>
-					<button class="btn btn-success" id="RA2" onclick="mostrar('Reservacion-Antigua2', 'Precio-Antigua2', 'Descripcion-Antigua2', 'Itinerario-Antigua2', 'RA2', 'IA2', 'PA2', 'DA2')">Reservation</button>
-				</div>
-				<div class="tour-info" id="Descripcion-Antigua2">
-					<p>During this tour you will know the beauty colonial city of Antigua Guatemala. It's arquitechture goes on XV century.</p>
-				</div>
-				<div class="tour-info" id="Itinerario-Antigua2">
-					<p>Our staff will pick you up at 9:30 am and go to Antigua Guatemala, the road takes around 1 hour. Arriving you will start the tour walking through.</p>
-				</div>
-				<div class="tour-info" id="Precio-Antigua2">
-					<p>The price per person in USD is 25.00.</p>
-				</div>
-				<div class="tour-info"id="Reservacion-Antigua2">
-					<div class="insc">
-						    <h2 style="text-align: center;">Reservation</h2>
-						    <p>Fill this form to reserve your tour.</p>
-						    <div class="reservation-form">
-						      <form action="https://formspree.io/travelcenterguatemala@gmail.com" method="post">
-						        <h5>Name</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8198;&nbsp&nbsp
-						        <input type="text" class="name" name="Nombre" placeholder="Name" style="width: 50%;">
-						        <br><br>
-						        <h5>Lastname</h5>&nbsp&nbsp&nbsp&nbsp&hairsp;&hairsp;
-						        <input type="text" class="lastname" name="Apellido" placeholder="Lastname" style="width: 50%;">
-						        <br><br>
-						        <h5>Email</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&hairsp;&nbsp&nbsp
-						        <input type="text" class="email" name="Email" placeholder="something@example.com" style="width: 50%;">
-						        <br><br>
-						        <h5>Date</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&nbsp
-						        <input type="date" class="dia" name="Fecha" style="width: 50%;"><br><br>
-						        <h5>Passengers</h5>&nbsp
-						        <input type="number" class="pax" name="Pax" style="width: 50%;"><br>
+			<div class="tour" id="TA2">
+				<h3 onclick="show('i-AntiguaTDT')">Two Days One Night</h3>
+				<div class="info" id="i-AntiguaTDT">
+					<div style="text-align: left;">
+						<button class="btn btn-success" id="DA2" onclick="mostrar('Descripcion-Antigua2', 'Itinerario-Antigua2', 'Precio-Antigua2', 'Reservacion-Antigua2', 'DA2', 'IA2', 'PA2', 'RA2')">Description</button>
+						<button class="btn btn-success" id="IA2" onclick="mostrar('Itinerario-Antigua2', 'Descripcion-Antigua2', 'Precio-Antigua2', 'Reservacion-Antigua2', 'IA2', 'PA2', 'RA2', 'DA2')">Schedule</button>
+						<button class="btn btn-success" id="PA2" onclick="mostrar('Precio-Antigua2', 'Descripcion-Antigua2', 'Itinerario-Antigua2', 'Reservacion-Antigua2', 'PA2', 'RA2', 'DA2', 'IA2')">Price</button>
+						<button class="btn btn-success" id="RA2" onclick="mostrar('Reservacion-Antigua2', 'Precio-Antigua2', 'Descripcion-Antigua2', 'Itinerario-Antigua2', 'RA2', 'IA2', 'PA2', 'DA2')">Reservation</button>
+					</div>
+					<div class="tour-info" id="Descripcion-Antigua2">
+						<p>During this tour you will know the beauty colonial city of Antigua Guatemala. It's arquitechture goes on XV century.</p>
+					</div>
+					<div class="tour-info" id="Itinerario-Antigua2">
+						<p>Our staff will pick you up at 9:30 am and go to Antigua Guatemala, the road takes around 1 hour. Arriving you will start the tour walking through.</p>
+					</div>
+					<div class="tour-info" id="Precio-Antigua2">
+						<p>The price per person in USD is 25.00.</p>
+					</div>
+					<div class="tour-info"id="Reservacion-Antigua2">
+						<div class="insc">
+							<h2 style="text-align: center;">Reservation</h2>
+							<p>Fill this form to reserve your tour.</p>
+							<div class="reservation-form">
+							  <form action="https://formspree.io/travelcenterguatemala@gmail.com" method="post">
+							    <h5>Name</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8198;&nbsp&nbsp
+							    <input type="text" class="name" name="Nombre" placeholder="Name" style="width: 50%;">
+							    <br><br>
+							    <h5>Lastname</h5>&nbsp&nbsp&nbsp&nbsp&hairsp;&hairsp;
+							    <input type="text" class="lastname" name="Apellido" placeholder="Lastname" style="width: 50%;">
+							    <br><br>
+							    <h5>Email</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&hairsp;&nbsp&nbsp
+							    <input type="text" class="email" name="Email" placeholder="something@example.com" style="width: 50%;">
+							    <br><br>
+							    <h5>Date</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&nbsp
+							    <input type="date" class="dia" name="Fecha" style="width: 50%;"><br><br>
+							    <h5>Passengers</h5>&nbsp
+							    <input type="number" class="pax" name="Pax" style="width: 50%;"><br>
 								<br><br>
-						        <h5>Comments</h5>
-						        <textarea name="text" class="comment" name="Comentario" rows="6" cols="100" placeholder="Comments here..." style="width: 100%;"></textarea>
-						        <br>
-						        <div class="status">
+							    <h5>Comments</h5>
+							    <textarea name="text" class="comment" name="Comentario" rows="6" cols="100" placeholder="Comments here..." style="width: 100%;"></textarea>
+							    <br>
+							    <div class="status">
 
-						        </div>
-						        <div class="btn-center">
-						          	<input type="Submit" name="Antigua" value="Send" class="btn btn-light">
-						        </div>
-						      </form>
-						    </div>
-						  </div>
+							    </div>
+							    <div class="btn-center">
+							          	<input type="Submit" name="Antigua" value="Send" class="btn btn-light">
+							    </div>
+							  </form>
+							</div>
+						</div>
+					</div>
+					<p style="text-align: right; padding-bottom: 1%;"><a href="https://www.baccredomatic.com/es-gt" target="_blank" class="btn btn-info">Buy</a></p>
 				</div>
-				<p style="text-align: right; padding-bottom: 1%;"><a href="https://www.baccredomatic.com/es-gt" target="_blank" class="btn btn-info">Buy</a></p>
 			</div>
-			<div class="tour">
-				<h3>Optional Tours</h3>
-				<div style="text-align: left;">
-					<button class="btn btn-success" id="DA3" onclick="mostrar('Descripcion-Antigua3', 'Itinerario-Antigua3', 'Precio-Antigua3', 'Reservacion-Antigua3', 'DA3', 'IA3', 'PA3', 'RA3')">Description</button>
-					<button class="btn btn-success" id="IA3" onclick="mostrar('Itinerario-Antigua3', 'Descripcion-Antigua3', 'Precio-Antigua3', 'Reservacion-Antigua3', 'IA3', 'PA3', 'RA3', 'DA3')">Schedule</button>
-					<button class="btn btn-success" id="PA3" onclick="mostrar('Precio-Antigua3', 'Descripcion-Antigua3', 'Itinerario-Antigua3', 'Reservacion-Antigua3', 'PA3', 'RA3', 'DA3', 'IA3')">Price</button>
-					<button class="btn btn-success" id="RA3" onclick="mostrar('Reservacion-Antigua3', 'Precio-Antigua3', 'Descripcion-Antigua3', 'Itinerario-Antigua3', 'RA3', 'IA3', 'PA3', 'DA3')">Reservation</button>
-				</div>
-				<div class="tour-info" id="Descripcion-Antigua3">
-					<p>During this tour you will know the beauty colonial city of Antigua Guatemala. It's arquitechture goes on XV century.</p>
-				</div>
-				<div class="tour-info" id="Itinerario-Antigua3">
-					<p>Our staff will pick you up at 9:30 am and go to Antigua Guatemala, the road takes around 1 hour. Arriving you will start the tour walking through.</p>
-				</div>
-				<div class="tour-info" id="Precio-Antigua3">
-					<p>The price per person in USD is 25.00.</p>
-				</div>
-				<div class="tour-info"id="Reservacion-Antigua3">
-					<div class="insc">
-						    <h2 style="text-align: center;">Reservation</h2>
-						    <p>Fill this form to reserve your tour.</p>
-						    <div class="reservation-form">
-						      <form action="https://formspree.io/travelcenterguatemala@gmail.com" method="post">
-						        <h5>Name</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8198;&nbsp&nbsp
-						        <input type="text" class="name" name="Nombre" placeholder="Name" style="width: 50%;">
-						        <br><br>
-						        <h5>Lastname</h5>&nbsp&nbsp&nbsp&nbsp&hairsp;&hairsp;
-						        <input type="text" class="lastname" name="Apellido" placeholder="Lastname" style="width: 50%;">
-						        <br><br>
-						        <h5>Email</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&hairsp;&nbsp&nbsp
-						        <input type="text" class="email" name="Email" placeholder="something@example.com" style="width: 50%;">
-						        <br><br>
-						        <h5>Date</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&nbsp
-						        <input type="date" class="dia" name="Fecha" style="width: 50%;"><br><br>
-						        <h5>Passengers</h5>&nbsp
-						        <input type="number" class="pax" name="Pax" style="width: 50%;"><br>
+			<div class="tour" id="TA3">
+				<h3 onclick="show('i-AntiguaOT')">Optional Tours</h3>
+				<div class="info" id="i-AntiguaOT">
+					<div style="text-align: left;">
+						<button class="btn btn-success" id="DA3" onclick="mostrar('Descripcion-Antigua3', 'Itinerario-Antigua3', 'Precio-Antigua3', 'Reservacion-Antigua3', 'DA3', 'IA3', 'PA3', 'RA3')">Description</button>
+						<button class="btn btn-success" id="IA3" onclick="mostrar('Itinerario-Antigua3', 'Descripcion-Antigua3', 'Precio-Antigua3', 'Reservacion-Antigua3', 'IA3', 'PA3', 'RA3', 'DA3')">Schedule</button>
+						<button class="btn btn-success" id="PA3" onclick="mostrar('Precio-Antigua3', 'Descripcion-Antigua3', 'Itinerario-Antigua3', 'Reservacion-Antigua3', 'PA3', 'RA3', 'DA3', 'IA3')">Price</button>
+						<button class="btn btn-success" id="RA3" onclick="mostrar('Reservacion-Antigua3', 'Precio-Antigua3', 'Descripcion-Antigua3', 'Itinerario-Antigua3', 'RA3', 'IA3', 'PA3', 'DA3')">Reservation</button>
+					</div>
+					<div class="tour-info" id="Descripcion-Antigua3">
+						<p>During this tour you will know the beauty colonial city of Antigua Guatemala. It's arquitechture goes on XV century.</p>
+					</div>
+					<div class="tour-info" id="Itinerario-Antigua3">
+						<p>Our staff will pick you up at 9:30 am and go to Antigua Guatemala, the road takes around 1 hour. Arriving you will start the tour walking through.</p>
+					</div>
+					<div class="tour-info" id="Precio-Antigua3">
+						<p>The price per person in USD is 25.00.</p>
+					</div>
+					<div class="tour-info"id="Reservacion-Antigua3">
+						<div class="insc">
+							<h2 style="text-align: center;">Reservation</h2>
+							<p>Fill this form to reserve your tour.</p>
+							<div class="reservation-form">
+							  <form action="https://formspree.io/travelcenterguatemala@gmail.com" method="post">
+							    <h5>Name</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8198;&nbsp&nbsp
+							    <input type="text" class="name" name="Nombre" placeholder="Name" style="width: 50%;">
+							    <br><br>
+							    <h5>Lastname</h5>&nbsp&nbsp&nbsp&nbsp&hairsp;&hairsp;
+							    <input type="text" class="lastname" name="Apellido" placeholder="Lastname" style="width: 50%;">
+							    <br><br>
+							    <h5>Email</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&hairsp;&nbsp&nbsp
+							    <input type="text" class="email" name="Email" placeholder="something@example.com" style="width: 50%;">
+							    <br><br>
+							    <h5>Date</h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&hairsp;&nbsp
+							    <input type="date" class="dia" name="Fecha" style="width: 50%;"><br><br>
+							    <h5>Passengers</h5>&nbsp
+							    <input type="number" class="pax" name="Pax" style="width: 50%;"><br>
 								<br><br>
-						        <h5>Comments</h5>
-						        <textarea name="text" class="comment" name="Comentario" rows="6" cols="100" placeholder="Comments here..." style="width: 100%;"></textarea>
-						        <br>
-						        <div class="status">
+							    <h5>Comments</h5>
+							    <textarea name="text" class="comment" name="Comentario" rows="6" cols="100" placeholder="Comments here..." style="width: 100%;"></textarea>
+							    <br>
+							    <div class="status">
 
-						        </div>
-						        <div class="btn-center">
-						          	<input type="Submit" name="Antigua" value="Send" class="btn btn-light">
-						        </div>
-						      </form>
-						    </div>
-						  </div>
+							    </div>
+							    <div class="btn-center">
+							          	<input type="Submit" name="Antigua" value="Send" class="btn btn-light">
+							    </div>
+							  </form>
+							</div>
+						</div>
+					</div>
+					<p style="text-align: right; padding-bottom: 1%;"><a href="https://www.baccredomatic.com/es-gt" target="_blank" class="btn btn-info">Buy</a></p>
 				</div>
-				<p style="text-align: right; padding-bottom: 1%;"><a href="https://www.baccredomatic.com/es-gt" target="_blank" class="btn btn-info">Buy</a></p>
 			</div>
 		</div>
 		<script type="text/javascript">
@@ -302,6 +310,16 @@
 
 			function reservar(){
 				window.location.href = "Reservation.html"
+			}
+
+			function hide(idElemento){
+				var e = document.getElementById(idElemento);
+				e.style.display = "none";
+			}
+
+			function show(idElemento){
+				var e = document.getElementById(idElemento);
+				e.style.display = "block";	
 			}
 		</script>
 		<footer>
