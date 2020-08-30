@@ -36,8 +36,8 @@ input{
 	border-left: none;
 	border-right: none;
 }
-hr
-	{color: black;
+hr{
+	color: black;
 	border: 10px;
 	background-color: white;
 }
