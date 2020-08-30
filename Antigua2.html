@@ -72,7 +72,7 @@
 			</div>
 			<br>
 			<div class="tour" id="TA1">
-				<h3 onclick="show('i-AntiguaODT')">One Day Tour</h3>
+				<h3 onclick="alternar('i-AntiguaODT')">One Day Tour</h3>
 				<div class="info" id="i-AntiguaODT">
 					<div style="text-align: left;">
 						<button class="btn btn-success" id="DA" onclick="mostrar('Descripcion-Antigua', 'Itinerario-Antigua', 'Precio-Antigua', 'Reservacion-Antigua', 'DA', 'IA', 'PA', 'RA')">Description</button>
@@ -126,7 +126,7 @@
 				</div>
 			</div>
 			<div class="tour" id="TA2">
-				<h3 onclick="show('i-AntiguaTDT')">Two Days One Night</h3>
+				<h3 onclick="alternar('i-AntiguaTDT')">Two Days One Night</h3>
 				<div class="info" id="i-AntiguaTDT">
 					<div style="text-align: left;">
 						<button class="btn btn-success" id="DA2" onclick="mostrar('Descripcion-Antigua2', 'Itinerario-Antigua2', 'Precio-Antigua2', 'Reservacion-Antigua2', 'DA2', 'IA2', 'PA2', 'RA2')">Description</button>
@@ -180,7 +180,7 @@
 				</div>
 			</div>
 			<div class="tour" id="TA3">
-				<h3 onclick="show('i-AntiguaOT')">Optional Tours</h3>
+				<h3 onclick="alternar('i-AntiguaOT')">Optional Tours</h3>
 				<div class="info" id="i-AntiguaOT">
 					<div style="text-align: left;">
 						<button class="btn btn-success" id="DA3" onclick="mostrar('Descripcion-Antigua3', 'Itinerario-Antigua3', 'Precio-Antigua3', 'Reservacion-Antigua3', 'DA3', 'IA3', 'PA3', 'RA3')">Description</button>
@@ -317,9 +317,13 @@
 				e.style.display = "none";
 			}
 
-			function show(idElemento){
+			function alternar(idElemento){
 				var e = document.getElementById(idElemento);
-				e.style.display = "block";	
+				if (e.style.display == "block"){
+					e.style.display = "none";
+				} else if (e.style.display == "none"){
+					e.style.display = "block";fc
+				}
 			}
 		</script>
 		<footer>
